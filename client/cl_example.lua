@@ -1,0 +1,21 @@
+RegisterCommand("show", function()
+	exports["am_drawtext"]:displayText("Testing Title", "Testing a random example description", "U", nil, function()
+		print("You pressed U!")
+	end)
+end)
+
+RegisterCommand("update2", function()
+	exports["am_drawtext"]:displayText("Updated Title", "Updated two keys example!", "X", "H", function()
+		print("Pressed X + H together!")
+	end)
+end)
+
+RegisterCommand("doexample", function()
+	exports["am_drawtext"]:displayText("Clothing Store", "Open Clothing Store", "H", nil, function()
+		print("Trigger open clothing store event..")
+	end)
+end)
+
+RegisterCommand("hide", function()
+	exports["am_drawtext"]:hideText()
+end)
